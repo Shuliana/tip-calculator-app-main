@@ -163,6 +163,17 @@ div.attribution{
 }
 
 
+/* 1 */
+button.btn-1 {
+    background: rgb(34, 114, 105);
+    background: linear-gradient(0deg, rgb(31, 100, 92) 0%, rgba(34, 114, 105, 1) 100%);
+    border: none;
+  }
+  button.btn-1:hover {
+     background: rgb(38, 192, 171);
+  background: linear-gradient(0deg, rgba(34, 114, 105, 1) 0%, rgba(38, 192, 171, 1) 100%);
+  }
+
 
 
 
