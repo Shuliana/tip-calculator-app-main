@@ -1,0 +1,275 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    background-color: hsl(185, 41%, 84%);
+    border: 1px solid black;
+    font-weight: 700;
+
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+button, input{
+    border: none;
+    font-family: monospace;
+    font-weight: 1000;
+
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* .margin{ 
+    margin-top: 10%;
+} */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.espaciado{ 
+    display: flex;
+    justify-content: space-around;
+}
+.space-between{ 
+    display: flex;
+    justify-content: space-between;
+}
+.center{ 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1{
+    text-align: center;
+    padding: 18%;
+}
+h2, h3{
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 4%;
+    
+}
+main section{
+    padding: 5%;
+    box-shadow: 20px 22px 26px -12px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 20px 22px 26px -12px rgba(0,0,0,0.22);
+    -moz-box-shadow: 20px 22px 26px -12px rgba(0,0,0,0.22);
+    border-radius: 25px;
+    background-color: white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+input{
+    font-size: 24px;
+    background-color: rgb(255, 249, 242);
+    width: 93.2%;
+    padding: 3%;
+    
+}
+input:focus{
+    border-radius: 5px;
+    outline: solid 2px hsl(172, 67%, 45%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+div.bill input{
+    text-align: right;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+} 
+
+div.button button{
+    color: white;
+    background: hsl(183, 100%, 15%);
+    border-radius: 7px;
+    padding: 4% 2% 4% 2%;
+    margin-bottom: 4%;
+    width: 45%;
+    font-size: 24px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+div.button button:hover{
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
+}
+
+
+
+div.numPeople input{
+    text-align: right;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+} 
+
+div.amount{
+    background: hsl(183, 100%, 15%);
+    border-radius: 5%;
+    color: hsl(186, 14%, 43%);
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    padding: 8%;
+}
+div.amount h3{
+    color: white;
+}
+div.amount input{
+    padding: 0px;
+    text-align: right;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    width: 25%;
+}
+div.amount .button-reset{
+    background-color: hsl(172, 67%, 45%);
+    border-radius:7px;
+    font-size: 24px;
+    padding: 4%;
+    font-weight: 800;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    -ms-border-radius:7px;
+    -o-border-radius:7px;
+}
+
+
+
+
+div.attribution{ 
+    padding: 5%;
+}
+
+
+
+
+
+@media (max-width:768px){
+    div.button{
+        flex-wrap: wrap;
+    }
+    div.button button{
+        width: 45%
+
+    }
+
+}
+@media (max-width: 1024px) and (min-width: 768px){
+    h1{
+        padding: 10%; 
+     }
+    main section{
+        display: flex;
+        justify-content: space-between;
+        width: 60% !important;
+        height: 300px;
+        padding: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+
+    }
+    div.amount{
+        justify-content: space-between;
+
+        width:40%;
+        padding: 4%;
+    }
+    div.amount input{
+        font-size: 45px;
+        text-align: left;
+        width: 100px;
+        height: 70px;
+        padding: 1%;
+    }
+    /* div.tip-amount, div.total{
+        width: 90px!important;
+        height: 70px!important;
+    } */
+    /* div.amount .button-reset{
+        display: block;
+        margin-bottom: 2px;
+    } */
+    div.button{
+        flex-wrap: wrap;
+    }
+    div.button button{
+        width: 30%
+    }
+  
+    
+}
+@media (min-width: 768px){
+    h1{
+       padding: 8%; 
+    }
+    main section{
+        display: flex;
+        justify-content: space-between;
+        width: 70% !important;
+        height: 450px;
+        padding: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45%;
+    }
+    div.amount{
+        justify-content: space-between;
+
+        width:45%;
+        padding: 4%;
+    }
+    div.amount input{
+        font-size: 45px;
+        text-align: left;
+        width: 100px;
+        height: 70px;
+        padding: 1%;
+    }
+    div.button{
+        flex-wrap: wrap;
+    }
+    div.button button{
+        width: 30%
+    }
+  
+}
+
+
+@media (min-width: 1300px){
+    main section{
+        width: 900px!important;
+    }
+}
