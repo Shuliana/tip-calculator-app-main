@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script type="text/javascript" src="porcent.js"></script>
   <title>Frontend Mentor | Tip calculator app</title>
 
 
@@ -19,7 +20,7 @@
       <div class="container-1">
         <div class="bill margin">
           <h2>Bill</h2>
-          <input type = "number" value="1298">
+          <input type = "number" value="1298" onclick="porcent(this.value)">
         </div>
         <div class="selectTip margin">
             <h2>Select tip %</h2>
@@ -29,7 +30,7 @@
                   <button>15%</button>
                   <button>25%</button>
                   <button>50%</button>
-                  <button>Custom</button>
+                  <input type="number" placeholder="CUSTOM" class="custom" onclick="porcent(this.porcentaje)">
               </div>
           </div>
           <div class="numPeople margin">

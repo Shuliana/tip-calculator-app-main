@@ -37,10 +37,6 @@ button, input{
     display: flex;
     flex-direction: column;
 }
-.espaciado{ 
-    display: flex;
-    justify-content: space-around;
-}
 .space-between{ 
     display: flex;
     justify-content: space-between;
@@ -67,11 +63,11 @@ main section{
     -webkit-box-shadow: 20px 22px 26px -12px rgba(0,0,0,0.22);
     -moz-box-shadow: 20px 22px 26px -12px rgba(0,0,0,0.22);
     border-radius: 25px;
-    background-color: white;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    background-color: white;
 }
 input{
     font-size: 24px;
@@ -89,7 +85,7 @@ input:focus{
     -o-border-radius: 5px;
 }
 div.bill input{
-    text-align: right;
+    /* text-align: right; */
     background-image: url(./images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: center left;
@@ -107,16 +103,25 @@ div.button button{
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    -webkit-transition: all 0.7s 0s ease-in-out;
+    -moz-transition: all 0.7s 0s ease-in-out;
+    -o-transition: all 0.7s 0s ease-in-out;
+    transition: all 0.7s 0s ease-in-out;
+ 
 }
 div.button button:hover{
     color: hsl(183, 100%, 15%);
     background-color:hsl(172, 67%, 45%);
+    -webkit-transition: all 0.s 06s ease-in-out;
+    -moz-transition: all 0.s 06s ease-in-out;
+    -o-transition: all 0.s 06s ease-in-out;
+    transition: all 0.s 06s ease-in-out;
+    filter: drop-shadow(3px 3px 6px  rgb(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(3px 3px 6px  rgb(0, 0, 0, 0.3));
 }
 
-
-
 div.numPeople input{
-    text-align: right;
+    /* text-align: right; */
     background-image: url(./images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: center left;
@@ -137,7 +142,7 @@ div.amount h3{
 }
 div.amount input{
     padding: 0px;
-    text-align: right;
+    /* text-align: right; */
     background-color: hsl(183, 100%, 15%);
     color: hsl(172, 67%, 45%);
     font-size: 24px;
@@ -172,6 +177,10 @@ button.btn-1 {
   button.btn-1:hover {
      background: rgb(38, 192, 171);
   background: linear-gradient(0deg, rgba(34, 114, 105, 1) 0%, rgba(38, 192, 171, 1) 100%);
+  -webkit-transition: all 0.7s 0s ease-in-out;
+  -moz-transition: all 0.7s 0s ease-in-out;
+  -o-transition: all 0.7s 0s ease-in-out;
+  transition: all 0.7s 0s ease-in-out;
   }
 
 
@@ -213,12 +222,12 @@ button.btn-1 {
         width:40%;
         padding: 4%;
     }
-    div.amount input{
-        font-size: 45px;
-        text-align: left;
+    div.tip-amount input, div.total input{
+        font-size: 50px;
+        /* text-align: left; */
         width: 100px;
-        height: 70px;
-        padding: 1%;
+        height: 40px!important;
+        padding-top: 0%;
     }
     /* div.tip-amount, div.total{
         width: 90px!important;
@@ -231,7 +240,7 @@ button.btn-1 {
     div.button{
         flex-wrap: wrap;
     }
-    div.button button{
+    div.button button, input.custom{
         width: 30%
     }
   
@@ -264,15 +273,20 @@ button.btn-1 {
     }
     div.amount input{
         font-size: 45px;
-        text-align: left;
-        width: 100px;
+        /* text-align: left; */
+        width: 130px;
         height: 70px;
-        padding: 1%;
+        /* padding: 1%; */
     }
     div.button{
         flex-wrap: wrap;
     }
-    div.button button{
+    input.custom{
+        text-align: center;
+        padding: 1%;
+        height: 50px;
+    }
+    div.button button, input.custom{
         width: 30%
     }
   
